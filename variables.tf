@@ -3,6 +3,12 @@ variable "name" {
   type        = string
 }
 
+variable "gabs_dummy_var" {
+  description = "I will get you deleted"
+  type        = number
+  default     = 1
+}
+
 variable "instance_count" {
   description = "Number of instances to launch"
   type        = number
