@@ -1,3 +1,9 @@
+output "super_password" {
+  value       = "42_is_the_answer"
+  description = "One pwd to rule them all."
+  sensitive   = true
+}
+
 output "id" {
   description = "List of IDs of instances"
   value       = aws_instance.this.*.id
